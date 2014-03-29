@@ -22,7 +22,7 @@
 		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/light.css">
 
 		<!-- If use the PDF print sheet so students can print slides-->
-		
+
 		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
 
 		<!--[if lt IE 9]>
@@ -42,7 +42,7 @@
           <h3>Beginning HTML and CSS</h3>
           <h4>Session 2</h4>
         </section>
-        
+
         <!-- Welcome-->
        <!--  <section>
           <h3>Welcome!</h3>
@@ -57,7 +57,7 @@
           </ul>
           </div>
         </section> -->
-        
+
          <section>
         	<h3>What we'll be making today</h3>
         	<div class="left" style="width: 45%;">
@@ -67,7 +67,7 @@
         		<img src="images/session2site.png">
         	</div>
         </section>
-        
+
         <!-- Inline vs. block-->
         <section>
           <h3>Inline vs Block</h3>
@@ -75,7 +75,7 @@
             <div class = "fragment">
               <p>So far, we have mostly seen <span class="green">"block"</span> elements</p>
               <p>They appear on the next line, like paragraphs</p>
-            </div> 
+            </div>
             <br/><br/>
             <div class = "fragment">
               <p>There are also <span class="green">"inline"</span> elements</p>
@@ -96,7 +96,7 @@
             <li>Block elements: p, h1, ul, li, almost everything else</li>
           </ul>
         </section>
-        <section> 
+        <section>
         	<h3>Element: Div</h3>
         		<ul>
 	        		<li>Block level element. Each new div is rendered on a new line.</li>
@@ -125,14 +125,14 @@
           <li>We would wrap them in a div element to style them differently.</li>
           </ul>
            </div>
-        </section> 
-        
+        </section>
+
         <section>
           <h3>Grouping elements with div, cont.</h3>
 <pre><code class = "html">
 .align-right{
   text-align:right;
-  color: purple; 
+  color: purple;
   font-weight: bold;
 }
 </code></pre>
@@ -140,9 +140,9 @@
 <pre><code class ="html">
 &lt;div class="align-right">
   &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p>
-  &lt;p>Sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p> 
+  &lt;p>Sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p>
 &lt;/div>
-&lt;p>Magna aliqua. Ut enim ad minim veniam.&lt;/p> 
+&lt;p>Magna aliqua. Ut enim ad minim veniam.&lt;/p>
 &lt;p>Quis nostrud exercitation ullamco.&lt;/a>
 </code></pre>
 <div style = "text-align:right;font-weight: bold; font-size: 70%;" class = "green">
@@ -154,24 +154,24 @@
 <p>Quis nostrud exercitation ullamco.</a>
 
 </div>
-        </section> 
+        </section>
         <section>
           <h3>Let's Develop It</h3>
          <p class="left-align">Let's create a site using divs to separate content into different sections on our page.</p>
-         <p class="left-align">Create a header, content area, sidebar, and a footer.</p>         
-        </section> 
+         <p class="left-align">Create a header, content area, sidebar, and a footer.</p>
+        </section>
         <section>
         	<h3>Element: Span</h3>
         	<ul>
         	<li>Inline element. Each new span is rendered next to each other &amp; only wraps when it reaches the edge of the containing element.</li>
         	<li>Can be used to apply styles to text inline so as not to break the flow of content.</li>
         	</ul>
-        </section>     
+        </section>
         <!-- Span -->
         <section>
           <h3>Span</h3>
           <p>Span is used to apply a specific style inline</p>
-          
+
 <pre><code class ="html">
 .yellow{
   color:yellow;
@@ -188,56 +188,14 @@
          <section>
           <h3>Let's Develop It</h3>
          <p>Let's add some spans to our content to help highlight some text. </p>
-        </section>      
-        <!-- Pseudo class-->
-        <section>
-          <h3>Pseudo-classes, more CSS for links</h3>
-          <div class ="left left-align" style="width:50%">
-          <p>Changing the format of a link when you hover over it is accomplished by using pseudo-classes.</p>
-          <br/>
-          <p>CSS pseudo-classes are used to add special effects to some selectors.</p>
-          </div>
-          Syntax:	
-<pre><code class ="html">
-selector:pseudo-class
-{
-  property:value;	
-}
-</code></pre>
-          Example:
-<pre><code class ="html">
-a:link
-{
-  text-decoration: none;
-}
-</code></pre>
         </section>
-        
-        <!-- Pseudo class-->
-        <section>
-          <h3>Pseudo-classes, more CSS for links</h3>
-<pre><code class ="html">
-  a:link	{color:#FF0000;} /* unvisited link */
-  a:visited	{color:#00FF00;} /* visited link */
-  a:hover	{color:#FF00FF;} /* mouse over link */
-  a:active	{color:#0000FF;} /* selected link */
-</code></pre>
-          <p>Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective!</p>
-          <p>Note: a:active MUST come after a:hover in the CSS definition in order to be effective!</p>
-        </section>
-       
-        <!-- Exercise-->
-        <section>
-          <h3>Let's Develop It</h3>
-          <p>Add pseudo classes to your links</p>
-        </section>
-        
+
         <!-- Box model-->
         <section>
           <h3>Box Model</h3>
           <img src ="images/box-model.png"/>
         </section>
-        
+
         <!-- Padding -->
         <section>
           <h3>Padding</h3>
@@ -250,7 +208,7 @@ a:link
           <p>Adds to the total width of the box.</p>
           <img src ="images/box-model-padding.png"/>
         </section>
-        
+
         <section>
           <h3>Padding</h3>
           15 pixels on all sides
@@ -264,9 +222,9 @@ padding-top: 10px;
           10 on top, 5 on right, 3 on bottom, 5 on left
 <pre><code class ="html">
 padding: 10px 5px 3px 5px;
-</code></pre>  
+</code></pre>
         </section>
-       
+
         <section>
           <h3>Padding</h3>
           <p>Four values<p>
@@ -282,7 +240,7 @@ padding: 10px 5px 3px 5px;
   padding: all;
 </code></pre>
         </section>
-       
+
         <section>
           <h3>Padding</h3>
 <pre><code class ="html">
@@ -290,14 +248,14 @@ padding: 10px 5px 3px 5px;
 </code></pre>
         <img src ="images/box-model-padding2.png"/>
         </section>
-       
+
         <!-- Border-->
         <section>
           <h3>Border</h3>
           <p>The edge around the box, specified as "thickness, style, color."</p>
           <img src ="images/box-model-border.png">
         </section>
-        
+
         <section>
           <h3>Border</h3>
           <p>A solid red border</p>
@@ -314,7 +272,7 @@ padding: 10px 5px 3px 5px;
   border-bottom: 4px dotted #000000;
 </code></pre>
         </section>
-       
+
         <section>
           <h3>Border - Other Properties</h3>
 <pre><code class ="html">
@@ -324,14 +282,14 @@ padding: 10px 5px 3px 5px;
 </code></pre>
           <p>You can specify each property separately, or all three together.</p>
         </section>
-       
+
         <!-- Margin -->
         <section>
           <h3>Margin</h3>
           <p>The transparent area around the box that separates it from other elements.</p>
           <img src ="images/box-model-margin.png"/>
         </section>
-        
+
         <section>
           <h3>Margin</h3>
           <p>15 pixels on all sides</p>
@@ -347,7 +305,7 @@ padding: 10px 5px 3px 5px;
   margin-top: 10px;
 </code></pre>
         </section>
-        
+
         <section>
           <h3>Auto Margin</h3>
           <p>If a margin is set to auto on a box that has width, it will take up as much space as possible.</p>
@@ -363,7 +321,7 @@ padding: 10px 5px 3px 5px;
   width: 300px;
 </code></pre>
         </section>
-        
+
         <!-- Exercise-->
         <!-- Exercise -->
 		<section>
@@ -410,7 +368,7 @@ padding: 10px 5px 3px 5px;
       <p><a href="http://meyerweb.com/eric/tools/css/reset/">meyerweb.com/eric/tools/css/reset/</a></p>
       <br/>
       <p>Basic Reset for today:</p>
-<pre><code>html, body, div, span, h1, h2, h3, h4, h5, h6, 
+<pre><code>html, body, div, span, h1, h2, h3, h4, h5, h6,
 p, a, em, strong, ol, ul, li {
   margin: 0;
   padding: 0;
@@ -432,7 +390,7 @@ ol, ul {
          <p>Static elements ignore top, bottom, right or left property specifications.</p>
          </div>
        </section>
-       
+
        <section>
          <h3>Static Positioning</h3>
          <p>In normal flow, inline boxes flow from left to right, wrapping to next line when needed.</p>
@@ -454,7 +412,7 @@ ol, ul {
 <img src="images/cookie2.png"/>
 <img src="images/cookie3.png"/>
        </section>
-       
+
        <section>
          <h3>Static Positioning</h3>
          <p>In normal flow, block boxes flow from top to bottom, making a new line after every box.</p>
@@ -469,7 +427,7 @@ ol, ul {
           <p>Hi there!</p>
         </div>
       </section>
-       
+
        <!-- Relative Positioning-->
        <section>
          <h3>Relative Positioning</h3>
@@ -482,17 +440,17 @@ ol, ul {
          </ul>
          </div>
        </section>
-       
+
        <section>
          <h3>Relative Positioning</h3>
          <p>The "relative" value will still put the element in the normal flow, but then offset it according to top/left/right/bottom properties.</p>
 
 <pre><code class = "html">
   .relative{
-    position: relative; 
-    left: 80px; 
+    position: relative;
+    left: 80px;
     top: 20px;
-    height: 100px; 
+    height: 100px;
     background-color: yellow;
   }
 </code></pre>
@@ -517,32 +475,32 @@ ol, ul {
          </ul>
          </div>
        </section>
-       
+
        <section  style="border: 1px solid black">
          <h3>Absolute Positioning</h3>
          <p>The "absolute" value will take the element out of the normal flow and position it in relation to the window (or the closest non-static element).</p>
 <pre><code class = "html">
   .top{
-    position: absolute; 
-    top: -40px; 
-    right: 10px; 
+    position: absolute;
+    top: -40px;
+    right: 10px;
     background-color: yellow
   }
 </code></pre>
 <pre><code class = "html">
   .bottom{
-    position: absolute; 
-    bottom: -40px; 
-    left:60px; 
+    position: absolute;
+    bottom: -40px;
+    left:60px;
     background-color: green
   }
 </code></pre>
          <div>
-         <div style="position: absolute; top: -40px; right: 10px; 
+         <div style="position: absolute; top: -40px; right: 10px;
            background-color: yellow; color:black">
           Up here
          </div>
-       <div style="position: absolute; bottom: -40px; left:60px; 
+       <div style="position: absolute; bottom: -40px; left:60px;
          background-color: green">
           Down here
          </div>
@@ -565,31 +523,31 @@ ol, ul {
          <p class="left-align">The element with highest z-index goes on top.</p>
 <pre><code class ="html">
   .bottom{
-    position: absolute; 
-    bottom: 10px; 
-    left:60px; 
+    position: absolute;
+    bottom: 10px;
+    left:60px;
     background-color: yellow;
   }
 </code></pre>
 <pre><code class ="html">
   .top{
-    position: absolute; 
-    bottom: 15px; 
-    left:60px; 
-    background-color: green; 
+    position: absolute;
+    bottom: 15px;
+    left:60px;
+    background-color: green;
     z-index: 2;
   }
 </code></pre>
-        <div style="position: absolute; bottom: -20px; left:60px; 
+        <div style="position: absolute; bottom: -20px; left:60px;
           background-color: yellow; color:black"> Bottom </div>
-        <div style="position: absolute; bottom: -15px; left:60px; 
+        <div style="position: absolute; bottom: -15px; left:60px;
           background-color: green; z-index: 2; "> Top </div>
        </section>
        <section>
         <h3>Let's Develop it!</h3>
         <p>Let's add some positioning.</p>
         <p>Let's create a div that contains an image and a caption, and position the caption absolutely overtop the image.</p>
-        
+
        </section>
        <!-- Float-->
        <section>
@@ -626,9 +584,9 @@ ol, ul {
         <div class = "left-align">Not floating element</div>
          <div class = "left-align">Not floating element with wrapping Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
        </section>
-       
+
        <section>
-       <h3>Using floats to place elements side by side</h3> 
+       <h3>Using floats to place elements side by side</h3>
        <p>If you want two block level elements to be side by side, you need to float both elements. One left, and one right.</p>
        <img src="images/example-float-column.png" />
        </section>
@@ -645,8 +603,8 @@ ol, ul {
   clear: left;
   clear: both;
 </code></pre>
-       </section> 
-       
+       </section>
+
        <section>
           <h3>Clear</h3>
  <pre><code class ="html">
@@ -668,24 +626,64 @@ ol, ul {
          <div class = "left-align">Not floating element</div>
          <div class = "left-align" style="clear: left;">Non-floating element with a class of <strong>.clear-left</strong></div>
         </section>
-        
+
         <!-- Exercise-->
        <section>
          <h3>Let's Develop It</h3>
          <p>Let's float our side bar and content areas.</p>
-       </section>       <!-- Question-->
+       </section>
+			<!-- Pseudo class-->
+			<section>
+				<h3>Pseudo-classes, more CSS for links</h3>
+				<div class ="left left-align" style="width:50%">
+				<p>Changing the format of a link when you hover over it is accomplished by using pseudo-classes.</p>
+				<br/>
+				<p>CSS pseudo-classes are used to add special effects to some selectors.</p>
+				</div>
+				Syntax:
+<pre><code class ="html">
+selector:pseudo-class
+{
+property:value;
+}
+</code></pre>
+				Example:
+<pre><code class ="html">
+a:link
+{
+text-decoration: none;
+}
+</code></pre>
+			</section>
+
+			<!-- Pseudo class-->
+			<section>
+				<h3>Pseudo-classes, more CSS for links</h3>
+<pre><code class ="html">
+a:link	{color:#FF0000;} /* unvisited link */
+a:visited	{color:#00FF00;} /* visited link */
+a:hover	{color:#FF00FF;} /* mouse over link */
+a:active	{color:#0000FF;} /* selected link */
+</code></pre>
+				<p>Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective!</p>
+				<p>Note: a:active MUST come after a:hover in the CSS definition in order to be effective!</p>
+			</section>
+
+			<!-- Exercise-->
+			<section>
+				<h3>Let's Develop It</h3>
+				<p>Add pseudo classes to your links</p>
+			</section>
+			
+			<!-- Question-->
         <section>
           <h2>Questions?</h2>
           <div style = "font-size:1200%; height:100%; margin-top:30%" class ="blue">?
             <div class ="clear"></div></div>
         </section>
-        <section>
-          <h3>Startup Phenomenon Women Discount</h3>
-          <img src="images/spwomen.png" />
-          <p>Discount for all GDI Boulder members. $45 off tickets with discount code <strong class="pink">girldevelopit</strong></p>
-        </section> 
+
       </div>
-      
+
       <footer>
         <div class="copyright">
           HTML/CSS ~ Girl Develop It ~
